@@ -1,3 +1,6 @@
+#Write a program to sort a list of N elements using Selection Sort Technique.
+
+#function to selectively sort an array 
 def selection_sort(list):
     for i in range(len(list)):
         min_index=i
@@ -6,6 +9,7 @@ def selection_sort(list):
                 min_index = j
     list[i], list[min_index] = list[min_index], list[i]
 
+#reading input
 n=int(input("Enter the number of elements:"))
 list = []
 print("Enter the elements:")

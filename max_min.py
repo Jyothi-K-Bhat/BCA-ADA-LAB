@@ -1,5 +1,4 @@
-#python program to find maximum and minimum values in an array
-#using divide and conquor method
+#Write a program to read ‘n’ numbers, find minimum and maximum value in an array using divide and conquer.
 
 #function to recursively find max and min values
 def find_min_max(arr, low, high):
