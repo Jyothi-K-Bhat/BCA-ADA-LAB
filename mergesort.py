@@ -40,9 +40,13 @@ print("The sorted array is:", array)
 
 #random input
 print("****************RUNNING TIME ANALYSIS FOR RANDOM INPUT********************")
-for i in range(5,10):
-    array=randint(0,1000*i,1000*i)  #Making an array of random integers of size 1000*i
+y=1
+while y:
+    i=int(input("Enter a large number above 5000:"))
+    array=randint(0,i,i)  #Making an array of random integers of size 1000*i
     start_time = time.time()   #records the time just before mergesort is implimented
     mergesort(array)
     end_time = time.time()   #records the time just after mergesort is implimented
     print("The time taken to sort",len(array),"elements is", end_time - start_time,"seconds")
+    y=int(input("Do you want to continue?(1/0)"))
+

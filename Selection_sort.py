@@ -14,7 +14,6 @@ n=int(input("Enter the number of elements:"))
 list = []
 print("Enter the elements:")
 for i in range(n):
-    a=int(input())
-    list.append(a)
+    list.append(int(input()))
 selection_sort(list)
 print(list)
